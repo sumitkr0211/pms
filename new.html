@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:font-size="http://www.w3.org/1999/xhtml"  style="display: flex;
+    justify-content: center;
+    align-items: center;
+        background: darkorchid;">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Details adn Treatment</title>
+    <link rel="stylesheet"
+          href="hate.css">
+</head>
+<body>
+    <div class="dis">
+        <div class="details">
+            <h3 style="margin: auto; color: wheat;">Personal Details</h3>
+            <div class="c1">
+                <input type="text" placeholder="Patient Name" name="name">
+            </div>
+            <div class="c2">
+                <input type="text" onkeypress="return /[0-9]/i.test(event.key)" placeholder="Mobile No" maxlength="10" size="10" style="width:100px" name="no">
+                <input type="text" id="ge" list="gen" placeholder="M/F" maxlength="1" size="1" style="width:45px" >
+                <datalist id="gen"></datalist>
+            </div>
+            <div class="c3">
+                <input type="date" id="date"  placeholder="Birthday" style="width:100px;color:white;" name="bir" >
+                <input type="text" id="age" onkeypress="return /[0-9]/i.test(event.key)" maxlength="2" placeholder="Age" style="width:35px" name="age">
+
+            </div>
+            <div class="c4">
+
+                <input type="text"  id="address" placeholder="Address"  name="add">
+            </div>
+            <div class="c5">
+                <input type="text" id="comm" placeholder="Comment"  name="com">
+            </div>
+
+
+        </div>
+
+        <div class="treatment">
+            <h3 style="margin: auto; color: wheat;">Treatment</h3>
+            <div class="a1">
+                <input type="text" id="clin" placeholder="Clinical Feature" name="cli">
+            </div>
+            <div class="a2">
+                <input type="text" id="diag" placeholder="Diagnosis" name="dia">
+
+            </div>
+            <div class="a3">
+                <input type="text" id="inve" placeholder="Investigation" name="inv">
+            </div>
+            <div class="a4">
+
+                <input type="text" id="trea" placeholder="Treatment" name="2treat">
+            </div>
+            <div class="a5">
+                <input type="date"  style="width:100px" name="dat">
+                <input type="text" onkeypress="return /[0-9]/i.test(event.key)" placeholder="Fees" name="fee">
+            </div>
+        <div class="bttn">
+            <button id="button8" onclick="getvalue()"><img src="img/sub.png "width=100px height=100px></button>
+            <button id="button9" onclick="get1()"><img src="img/re.png "width=100px height=100px ></button>
+        </div>
+        </div>
+    </div>
+    <script src="hate.js"></script>
+    <script src="filesaver.js"></script>
+</body>
+</html>
